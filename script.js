@@ -51,3 +51,9 @@ function restartGame() {
 }
 
 window.onload = startGame;
+
+document.getElementById("guessInput").addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        submitGuess();
+    }
+});
